@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import cl.riaraneda.appmor.R;
 
+import static android.view.View.VISIBLE;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,19 +45,20 @@ public class ShowFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final EditText addresseeMe = (EditText) view.findViewById(R.id.addresseeMe);
+        final EditText addressee = (EditText) view.findViewById(R.id.addressee);
         final Button show = (Button) view.findViewById(R.id.showBtn);
-        final TextView messageMe = (TextView) view.findViewById(R.id.messageMe);
         final TextView msgCount = (TextView) view.findViewById(R.id.msgCount);
+        final TextView appmorOne = (TextView) view.findViewById(R.id.appmorOne);
+        final TextView appmorTwo = (TextView) view.findViewById(R.id.appmorTwo);
 
 show.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
-        addresseeMe.setVisibility(View.INVISIBLE);
-        show.setVisibility(View.INVISIBLE);
-        messageMe.setVisibility((View.VISIBLE));
-        msgCount.setVisibility(View.VISIBLE);
+        msgCount.setVisibility(VISIBLE);
+        appmorOne.setVisibility(VISIBLE);
+        appmorTwo.setVisibility(View.VISIBLE);
+
     }
 });
 

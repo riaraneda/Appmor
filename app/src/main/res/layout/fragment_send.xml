@@ -2,62 +2,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.riaraneda.appmor.views.tabs.SendFragment"
-    android:orientation="vertical"     >
+    android:orientation="vertical"
+    tools:context="cl.riaraneda.appmor.views.tabs.SendFragment">
+
 
     <EditText
         android:id="@+id/addresseeLove"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingresa Instagram o e-mail del destinatario"
-
-        />
-
+        android:layout_marginTop="25dp"
+        android:hint="Ingresa Instagram o e-mail del destinatario" />
 
     <EditText
         android:id="@+id/messageLove"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lines="3"
+        android:layout_marginTop="25dp"
         android:hint="Escribe tu Appmor"
-
-        />
+        android:lines="3"    />
 
     <Button
+        android:layout_marginTop="15dp"
         android:id="@+id/sendBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ENVIAR"
-
-
-        />
+        android:text="ENVIAR"        />
 
     <TextView
+        android:layout_marginTop="25dp"
         android:id="@+id/confirmation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Esta funcionalidad es de pago. Escríbenos para regalarte un Appmor gratuito"
+        android:text="Esta funcionalidad es de pago."
         android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center" />
+
         />
 
     <Button
+        android:layout_marginTop="15dp"
         android:id="@+id/emailUs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HABILITAR APPMOR GRATUITO"
-        android:visibility="gone"
-
-
-        />
+        android:text="HABILITAR APPMOR GRATIS POR EL DÍA"
+        android:visibility="gone"        />
 
     <Button
+        android:layout_marginTop="15dp"
         android:id="@+id/sendEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ENVIAR TU APPMOR POR EMAIL"
-        android:visibility="gone"
-
-
-        />
+        android:visibility="gone"        />
 
 </LinearLayout>

@@ -1,44 +1,59 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.riaraneda.appmor.views.tabs.ShowFragment">
+    tools:context="cl.riaraneda.appmor.views.tabs.ShowFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
 
     <EditText
-        android:id="@+id/addresseeMe"
+        android:id="@+id/addressee"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingresa tu Instagram o e-mail" />
 
     <Button
         android:id="@+id/showBtn"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addresseeMe"
         android:text="VER APPMOR DISPONIBLES" />
 
     <TextView
         android:id="@+id/msgCount"
-        android:layout_below="@id/showBtn"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        android:text="Tienes 1 Appmor"
-
-
-        />
+        android:text="Tienes 2 Appmor en tu inbox"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:gravity="left"         />
 
     <TextView
-        android:id="@+id/messageMe"
+        android:id="@+id/appmorOne"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/msgCount"
-        android:text="*Tus ojos son dos luceros que alumbran el ultramar; quisiera ser marinero para en tu puerto recalar."
+        android:text="Buenos días, que tengas lindo día."
         android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"         />
 
-        />
+    <TextView
+        android:id="@+id/appmorTwo"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgCount"
+        android:text="Tus ojos son dos luceros que alumbran el ultramar; quisiera ser marinero para en tu puerto recalar"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"         />
 
-
-</RelativeLayout>
+</LinearLayout>

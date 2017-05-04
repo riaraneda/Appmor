@@ -56,11 +56,11 @@ public class SendFragment extends Fragment {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                addresseelove.setVisibility(View.GONE);
+                message.setVisibility(View.GONE);
+                send.setVisibility(View.GONE);
                 confirmation.setVisibility(View.VISIBLE);
                 emailUs.setVisibility(View.VISIBLE);
-                addresseelove.setVisibility(View.INVISIBLE);
-                message.setVisibility(View.INVISIBLE);
-                send.setVisibility(View.INVISIBLE);
                 sendEmail.setVisibility(View.VISIBLE);
 
 
@@ -74,9 +74,9 @@ public class SendFragment extends Fragment {
                 intent.setType("*/*");
                 intent.setData(Uri.parse("mailto:"));
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]
-                        {"riaraneda@gmail.com"});
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Habilitar mi cuenta");
-                intent.putExtra(Intent.EXTRA_TEXT, "Favor usar este email para habilitar 1 Appmor gratuito.".toString());
+                        {"hola@appmor.com"});
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Habilitar Appmor Gratis");
+                intent.putExtra(Intent.EXTRA_TEXT, "Habilitar Appmor gratis por hoy.".toString());
                 startActivity(intent);
             }
         });
@@ -89,7 +89,7 @@ public class SendFragment extends Fragment {
                 intent.setType("*/*");
                 intent.setData(Uri.parse("mailto:"));
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]
-                        {"riaraneda@gmail.com"});
+                        {addresseelove.getText().toString()});
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Te estoy enviando un Appmor");
                 intent.putExtra(Intent.EXTRA_TEXT, message.getText().toString());
                 startActivity(intent);
