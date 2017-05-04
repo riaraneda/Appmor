@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.riaraneda.appmor.views.tabs.SendFragment"
+    android:orientation="vertical"     >
+
+    <EditText
+        android:id="@+id/addresseeLove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa Instagram o e-mail del destinatario"
+
+        />
+
+
+    <EditText
+        android:id="@+id/messageLove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="Escribe tu Appmor"
+
+        />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"
+
+
+        />
+
+    <TextView
+        android:id="@+id/confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta funcionalidad es de pago. Escríbenos para regalarte un Appmor gratuito"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/emailUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HABILITAR APPMOR GRATUITO"
+        android:visibility="gone"
+
+
+        />
+
+    <Button
+        android:id="@+id/sendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR TU APPMOR POR EMAIL"
+        android:visibility="gone"
+
+
+        />
+
+</LinearLayout>
